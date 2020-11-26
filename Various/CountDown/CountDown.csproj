@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+    <RootNamespace>CountDown</RootNamespace>
+    <AssemblyName>CountDown</AssemblyName>
+  </PropertyGroup>
+
+<ItemGroup>
+  <None Include="Properties\Settings.settings">
+    <Generator>SettingsSingleFileGenerator</Generator>
+    <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+  </None>
+  <Compile Update="Properties\Settings.Designer.cs">
+    <AutoGen>True</AutoGen>
+    <DependentUpon>Settings.settings</DependentUpon>
+    <DesignTimeSharedInput>True</DesignTimeSharedInput>
+  </Compile>
+</ItemGroup>
+</Project>
